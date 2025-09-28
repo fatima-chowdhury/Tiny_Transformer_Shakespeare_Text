@@ -1,8 +1,8 @@
-%%writefile model.py
+%%writefile model.py 
 import math, torch, torch.nn as nn, torch.nn.functional as F
 
 # ------------------------------
-# Positional Encoding (sinusoidal)
+# Positional Encoding (sinusoidal function)
 # ------------------------------
 class SinusoidalPositionalEncoding(nn.Module):
     def __init__(self, d_model, max_len=10000):
